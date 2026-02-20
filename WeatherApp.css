@@ -1,0 +1,38 @@
+*{box-sizing:border-box}
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    font-family:'Segoe UI',sans-serif;
+}
+.app{
+    width:360px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 30px rgba(0,255,255,0.2);
+    text-align:center;
+    color:white;
+}
+.search-box{display:flex;gap:10px}
+input{flex:1;padding:10px;border-radius:8px;border:none}
+button{padding:10px;border:none;border-radius:8px;background:#00fff0;font-weight:bold;cursor:pointer}
+.loc-btn{margin-top:10px;width:100%;background:#00c2ff}
+.loader{margin-top:10px}
+.card{margin-top:15px;padding:15px;border-radius:15px;background:rgba(0,0,0,0.3)}
+.forecast-title{margin-top:20px}
+.forecast{display:flex;overflow-x:auto;gap:10px;margin-top:10px}
+.forecast-card{
+    min-width:90px;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    font-size:12px;
+}
+.error{margin-top:10px;color:#ff8080;font-weight:bold}
+.hidden{display:none}
